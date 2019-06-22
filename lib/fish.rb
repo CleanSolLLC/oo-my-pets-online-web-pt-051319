@@ -3,7 +3,7 @@ require 'pry'
 class Fish
 
   attr_accessor :mood, :owner
-  attr_reader
+  attr_reader :name
 
   def initialize(name, mood = "")
     @name = name
@@ -11,7 +11,7 @@ class Fish
   end
 
   def name
-    @name.freeze
+    @name
   end
 
 end
