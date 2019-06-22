@@ -40,10 +40,10 @@ class Owner
     self.pets.each do |key,value|
       if key == :fishes
         if value.empty?
-          :fishes[value] = Fish.new(name)
+          [:fishes] = Fish.new(name)
           binding.pry
         else
-          :fishes[value] << Fish.new(name)
+          [:fishes] << Fish.new(name)
         end
       end
     end
