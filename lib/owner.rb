@@ -39,14 +39,14 @@ class Owner
   def buy_fish(name)
     pets.each do |key,value|
       if key == :fishes
-        if value.empty?
-          pets[:fishes] << Fish.new(name)
+        value.each do
+          [:fishes] << Fish.new(name)
+        end
           binding.pry
         end
       end
     end
   end
-end
         #else
         #  pets[:fishes] << Fish.new(name)
         #end
