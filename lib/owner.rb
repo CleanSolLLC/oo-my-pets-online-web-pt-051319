@@ -39,13 +39,8 @@ class Owner
   def buy_fish(name)
     self.pets.each do |key,value|
       if key == :fishes
-        if value.empty?
-          key[value] = name
-        else
-          key[value] << name
-        end
+          key[value] << Fish.new(name)
       end
     end
   end
-
 end
