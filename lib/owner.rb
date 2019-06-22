@@ -41,10 +41,10 @@ class Owner
       if key == :fishes
         if value.empty?
           key[value] = Fish.new(name)
+          binding.pry
         else
           key[value] << Fish.new(name)
         end
-        binding.pry
       end
     end
   end
