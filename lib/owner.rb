@@ -36,4 +36,8 @@ class Owner
     {:cats=>[], :dogs=>[], :fishes=>[] }
   end
 
+  def buy_fish(name)
+    binding.pry
+  end
+
 end
