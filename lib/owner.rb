@@ -38,8 +38,8 @@ class Owner
 
   def buy_fish(name)
     self.pets.each do |key,value|
-      binding.pry
       if key == :fishes
+        binding.pry
         if value.empty?
           key[value] = Fish.new(name)
           binding.pry
