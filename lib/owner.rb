@@ -37,7 +37,7 @@ class Owner
   end
 
   def buy_fish(name)
-    self.pets[:fishes] << name
+    self.pets.each {|pets| pets == :fishes << name}
   end
 
 end
