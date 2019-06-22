@@ -1,3 +1,17 @@
+require 'pry'
+
 class Fish
-  # code goes here
+
+  attr_accessor :mood, :owner
+  attr_reader
+
+  def initialize(name, mood = "")
+    @name = name
+    @mood = "nervous"
+  end
+
+  def name
+    @name.freeze
+  end
+
 end
