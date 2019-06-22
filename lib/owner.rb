@@ -34,9 +34,6 @@ class Owner
 
   def pets
     Hash.new { |hash, key| hash[key] = [] }
-    {[:fishes]
-    [:dogs]
-    [:cats]}
   end
 
 end
