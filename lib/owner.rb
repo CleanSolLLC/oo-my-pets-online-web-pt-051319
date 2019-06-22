@@ -6,6 +6,7 @@ class Owner
   attr_reader :species
 
   @@all  = []
+  @@pets = {}
 
   def initialize(name)
     @name = name
@@ -33,26 +34,10 @@ class Owner
   end
 
   def pets
-  {:cats=>[], :dogs=>[], :fishes=>[] }
+  @@pets = {:cats=>[], :dogs=>[], :fishes=>[] }
   end
 
   def buy_fish(name)
-    pets.each do |key,value|
-      if key == :fishes
-        value.each do
-          [:fishes] = Fish.new(name)
-        end
-          binding.pry
-        end
-      end
-    end
+    @@pets[:fishes] = Fish.new(name)
   end
-        #else
-        #  pets[:fishes] << Fish.new(name)
-        #end
-        #binding.pry
-      #end
-    #end
-  #end
 
-#end
