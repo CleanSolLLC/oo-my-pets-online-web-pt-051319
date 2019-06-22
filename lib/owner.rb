@@ -40,7 +40,7 @@ class Owner
     pets.each do |key,value|
       if key == :fishes
         value.each do
-          [:fishes] << Fish.new(name)
+          [:fishes] = Fish.new(name)
         end
           binding.pry
         end
