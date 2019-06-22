@@ -2,7 +2,7 @@ require 'pry'
 
 class Owner
 
-  attr_accessor :owner, :name, :mood, :fish, :cat, :dog
+  attr_accessor :owner, :name, :mood, :fishes, :cat, :dog
   attr_reader :species
 
   @@all  = []
@@ -44,6 +44,7 @@ class Owner
         else
           key[value] << Fish.new(name)
         end
+        binding.pry
       end
     end
   end
