@@ -49,7 +49,7 @@ class Owner
     @@pets[:dogs] << Dog.new(name)
   end
 
-  def walks_dog(name)
+  def walk_dog(name)
     Dog.new(name, mood = "happy")
   end
 
