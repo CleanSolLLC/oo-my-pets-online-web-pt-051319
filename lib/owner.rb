@@ -33,7 +33,7 @@ class Owner
   end
 
   def pets
-    pets = Hash.new { |hash, key| hash[key] = [] }
+    #pets = Hash.new { |hash, key| hash[key] = [] }
     {:cats=>[], :dogs=>[], :fishes=>[] }
   end
 
