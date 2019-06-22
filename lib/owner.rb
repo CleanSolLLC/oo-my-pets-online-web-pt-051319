@@ -49,7 +49,7 @@ class Owner
     @@pets[:dogs] << Dog.new(name)
   end
 
-  def walk_dogs
+  def walk_dogs(name)
     dog = Dog.new(name)
     binding.pry
   end
