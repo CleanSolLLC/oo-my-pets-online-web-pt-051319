@@ -33,20 +33,26 @@ class Owner
   end
 
   def pets
-    {:cats=>[], :dogs=>[], :fishes=>[] }
+  {:cats=>[], :dogs=>[], :fishes=>[] }
   end
 
   def buy_fish(name)
-    self.pets.each do |key,value|
+    pets.each do |key,value|
       if key == :fishes
         if value.empty?
-          pets[:fishes] << Fish.new(name)
-        else
-          pets[:fishes] << Fish.new(name)
+          pets[:fishes] = Fish.new(name)
+          binding.pry
         end
-        binding.pry
       end
     end
   end
-
 end
+        #else
+        #  pets[:fishes] << Fish.new(name)
+        #end
+        #binding.pry
+      #end
+    #end
+  #end
+
+#end
