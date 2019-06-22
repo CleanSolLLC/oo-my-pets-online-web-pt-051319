@@ -34,7 +34,7 @@ class Owner
   end
 
   def pets
-  pets[:fishes] = [], pets[:dogs] = [], pets[:cats] = []
+  #pets[:fishes] = [], pets[:dogs] = [], pets[:cats] = []
   end
 
 end
