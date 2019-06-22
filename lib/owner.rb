@@ -50,7 +50,11 @@ class Owner
   end
 
   def walk_dogs
-    pets.each {|pet| pet == [:dogs] @mood = "happy"}
+    pets.each do |pet| 
+      if pet == [:dogs]
+         @mood = "happy"
+       end
+     end
     binding.pry
   end
 
