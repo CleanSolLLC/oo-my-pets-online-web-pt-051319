@@ -39,12 +39,11 @@ class Owner
   def buy_fish(name)
     self.pets.each do |key,value|
       if key == :fishes
-        binding.pry
         if value.empty?
-          key[value] = Fish.new(name)
+          value = Fish.new(name)
           binding.pry
         else
-          key[value] << Fish.new(name)
+          value << Fish.new(name)
         end
       end
     end
